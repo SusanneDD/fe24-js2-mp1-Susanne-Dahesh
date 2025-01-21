@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produktsida</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo"> Shopping för alla </div>
+        <nav class="menu">
+            <a href="#">Hem</a>
+            <a href="#">Produkter</a>
+            <a href="#">Kontakt</a>
+        </nav>
+    </header>
+
+    <section class="filters-container">
+        <h2>Filtrera och sortera produkter</h2>
+        <fieldset id="filters">
+            <legend>Filtrera produkter</legend>
+            <label for="categoryFilter">Kategori:</label>
+            <select id="categoryFilter">
+                <option value="">Alla kategorier</option>
+            </select>
+            
+            <label for="priceFilter">Maxpris:</label>
+            <input type="number" id="priceFilter" placeholder="Maxpris" aria-label="Maxpris">
+            
+            <button id="applyFilters">Tillämpa filter</button>
+        </fieldset>
+        
+        <fieldset id="sorting">
+            <legend>Sortera produkter</legend>
+            <button id="sortPriceAsc" aria-label="Sortera pris stigande">Pris ↑</button>
+            <button id="sortPriceDesc" aria-label="Sortera pris fallande">Pris ↓</button>
+            <button id="sortRatingAsc" aria-label="Sortera betyg stigande">Betyg ↑</button>
+            <button id="sortRatingDesc" aria-label="Sortera betyg fallande">Betyg ↓</button>
+        </fieldset>
+    </section>
+
+    <main id="productGrid" class="product-grid"></main>
+
+    <footer class="footer">
+        <p> Skönhet - Dofter - Möbler - Matvaror © 2025 </p>
+        <nav>
+            <a href="#">Integritetspolicy</a> | <a href="#">Villkor</a> | <a href="#">Hjälp</a>
+        </nav>
+    </footer>
+
+    <script type="module" src="/js/App.js"></script>
+
+</body>
+</html>
