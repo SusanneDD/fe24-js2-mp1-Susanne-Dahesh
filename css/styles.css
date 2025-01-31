@@ -90,6 +90,18 @@ body {
     cursor: not-allowed;
 }
 
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 8px;
+}
+
+.discounted-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #d9534f;
+}
+
 .footer {
     background-color: rgb(245, 220, 206);
     color: rgb(7, 7, 7);
