@@ -9,16 +9,14 @@
 <body>
     
     <header class="header">
-        <div class="logo"> Shopping för alla </div>
-        <nav class="menu">
-            <a href="#">Hem</a>
-            <a href="#">Produkter</a>
-            <a href="#">Kontakt</a>
-        </nav>
+        <h1 class="ml15">
+        <span class="word">SHOPPING</span>
+        <span class="word">FÖR</span>
+        <span class="word">ALLA</span>
+      </h1>
     </header>
 
     <section class="filters-container">
-        <h2>Filtrera och sortera produkter</h2>
         <fieldset id="filters">
             <legend>Filtrera produkter</legend>
             <label for="categoryFilter">Kategori:</label>
@@ -34,8 +32,8 @@
         
         <fieldset id="sorting">
             <legend>Sortera produkter</legend>
-            <button id="sortPriceAsc" aria-label="Sortera pris stigande">Pris ↑</button>
-            <button id="sortPriceDesc" aria-label="Sortera pris fallande">Pris ↓</button>
+            <button id="sortPriceAsc" aria-label="Sortera pris stigande">Pris stigande</button>
+            <button id="sortPriceDesc" aria-label="Sortera pris fallande">Pris fallande</button>
             <button id="sortRatingAsc" aria-label="Sortera betyg stigande">Betyg ↑</button>
             <button id="sortRatingDesc" aria-label="Sortera betyg fallande">Betyg ↓</button>
         </fieldset>
@@ -50,6 +48,7 @@
         </nav>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script type="module" src="/js/App.js"></script>
 
 </body>
