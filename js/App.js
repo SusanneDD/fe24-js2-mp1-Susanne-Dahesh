@@ -40,7 +40,10 @@ function displayProducts(products) {
             <img src="${product.imageUrl}" alt="${product.title}">
             <h2>${product.title}</h2>
             <p>Lagersaldo: ${product.stock}</p>
-            <p>Pris: ${product.discountedPrice} kr</p>
+            <p>
+                <span class="old-price">${product.price} kr</span>
+                <span class="discounted-price">${product.discountedPrice} kr</span>
+            </p>
             <button ${product.stock === 0 ? 'disabled' : ''}>Lägg till i kundvagn</button>
         `;
 
